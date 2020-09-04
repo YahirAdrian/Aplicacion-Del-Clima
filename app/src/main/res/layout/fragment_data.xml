@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewUbicationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="18dp"
+        android:text="Configura tu ubicacion primero"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewWeatherIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="62dp"
+         />
+
+    <TextView
+        android:id="@+id/textViewDegrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="83dp"
+        android:layout_toEndOf="@+id/imageViewWeatherIcon"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewWeatherDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDegrees"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/imageViewWeatherIcon"
+        android:text=""
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textViewWeatherData"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/imageViewWeatherIcon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="33dp"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="20dp"
+        android:text="Datos obtenidos de OpenWeatherMap" />
+
+</RelativeLayout>
